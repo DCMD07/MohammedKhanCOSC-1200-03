@@ -26,4 +26,18 @@ public class ProjectileMotion {
         // Prompt the user to enter the initial velocity
         System.out.print("Enter the initial velocity of the projectile (m/s): ");
         initialVelocity = Math.abs(scanner.nextDouble()); // Use absolute value to handle negative inputs
+    // Prompt the user to enter the initial velocity
+        System.out.print("Enter the initial velocity of the projectile (m/s): ");
+        initialVelocity = Math.abs(scanner.nextDouble()); // Use absolute value to handle negative inputs
+
+        // Prompt the user to enter the launch angle
+        System.out.print("Enter the launch angle of the projectile (degrees): ");
+        launchAngle = Math.abs(scanner.nextDouble()); // Use absolute value to handle negative inputs
+
+        // Convert the launch angle from degrees to radians
+        double launchAngleRadians = Math.toRadians(launchAngle);
+
+        // Calculate the maximum horizontal distance using the provided formula
+        maxDistance = (Math.pow(initialVelocity, 2) * Math.sin(2 * launchAngleRadians)) / GRAVITY;
+
 
