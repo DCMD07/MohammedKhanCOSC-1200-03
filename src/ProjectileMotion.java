@@ -39,5 +39,11 @@ public class ProjectileMotion {
 
         // Calculate the maximum horizontal distance using the provided formula
         maxDistance = (Math.pow(initialVelocity, 2) * Math.sin(2 * launchAngleRadians)) / GRAVITY;
+         // Display the calculated maximum horizontal distance
+        System.out.printf("The maximum horizontal distance of the projectile is: %.3f meters\n", maxDistance);
+
+        // Close the scanner object
+        scanner.close();
+
 
 
