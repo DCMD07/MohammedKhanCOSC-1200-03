@@ -26,7 +26,7 @@ public class ProjectileMotion {
         // Prompt the user to enter the initial velocity
         System.out.print("Enter the initial velocity of the projectile (m/s): ");
         initialVelocity = Math.abs(scanner.nextDouble()); // Use absolute value to handle negative inputs
-    // Prompt the user to enter the initial velocity
+        // Prompt the user to enter the initial velocity
         System.out.print("Enter the initial velocity of the projectile (m/s): ");
         initialVelocity = Math.abs(scanner.nextDouble()); // Use absolute value to handle negative inputs
 
@@ -39,11 +39,12 @@ public class ProjectileMotion {
 
         // Calculate the maximum horizontal distance using the provided formula
         maxDistance = (Math.pow(initialVelocity, 2) * Math.sin(2 * launchAngleRadians)) / GRAVITY;
-         // Display the calculated maximum horizontal distance
+        // Display the calculated maximum horizontal distance
         System.out.printf("The maximum horizontal distance of the projectile is: %.3f meters\n", maxDistance);
 
         // Close the scanner object
         scanner.close();
-
+    }
+}
 
 
