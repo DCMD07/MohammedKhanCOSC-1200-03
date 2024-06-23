@@ -50,13 +50,19 @@ public class TemperatureAnalyzer {
             // Calculate and display the overall average
             double totalLow = 0.0;
             double totalHigh = 0.0;
-            for (int i = 0; i < numDays; i++) {
-                totalLow += lowTemps[i];
-                totalHigh += highTemps[i];
-            }
+
             double overallAvg = (totalLow + totalHigh) / (2.0 * numDays);
             System.out.printf("The overall average temperature is %.2f\n", overallAvg);
 
+            // Find the day with the lowest temperature
+            int lowestDay = 0;
+
+            System.out.printf("The lowest temperature was %.2f on day %d\n", lowTemps[lowestDay], lowestDay + 1);
+
+            // Find the day with the highest temperature
+            int highestDay = 0;
+
+            System.out.printf("The highest temperature was %.2f on day %d\n", highTemps[highestDay], highestDay + 1);
 
         }
     }
