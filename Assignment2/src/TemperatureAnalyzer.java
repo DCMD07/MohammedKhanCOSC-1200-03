@@ -24,7 +24,7 @@ public static void main(String[] args) {
 
     double[] lowTemps = new double[numDays];
     double[] highTemps = new double[numDays];
-    // Get the temperature data for each day
+    // Get the temperature data for each day from the user
     for (int i = 0; i < numDays; i++) {
         int day = i + 1;
         System.out.println("Day " + day + ": ");
