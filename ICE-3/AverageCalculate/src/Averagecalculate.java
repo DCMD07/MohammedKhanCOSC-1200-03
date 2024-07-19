@@ -15,3 +15,17 @@ public class AverageCalculator {
         int numOfValues = 0;  // Number of values to be entered
         double sum = 0;       // Sum of the entered values
         int count = 0;        // Count of valid entered values
+     // Prompt user to enter the number of values
+        System.out.print("How many values do you want to enter: ");
+        while (true) {
+            try {
+                numOfValues = Integer.parseInt(scanner.nextLine());
+                if (numOfValues <= 0) {
+                    System.out.print("Please enter a positive number: ");
+                } else {
+                    break;  // Exit loop if input is valid
+                }
+            } catch (NumberFormatException e) {
+                System.out.print("Please enter a numeric value: ");
+            }
+        }
