@@ -47,3 +47,6 @@ public class AverageCalculator {
                 }
             }
         }
+        // Calculate and display the average
+        double average = sum / count;
+        System.out.println("The average is: " + average);
