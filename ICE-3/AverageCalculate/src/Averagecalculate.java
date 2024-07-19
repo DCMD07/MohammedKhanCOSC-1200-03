@@ -29,3 +29,21 @@ public class AverageCalculator {
                 System.out.print("Please enter a numeric value: ");
             }
         }
+        // Prompt user to enter each value
+        for (int i = 1; i <= numOfValues; i++) {
+            System.out.print("Enter value #" + i + ": ");
+            while (true) {
+                try {
+                    int value = Integer.parseInt(scanner.nextLine());
+                    if (value < 0) {
+                        System.out.print("Please enter a positive value: ");
+                    } else {
+                        sum += value;  // Add valid value to sum
+                        count++;       // Increment count of valid values
+                        break;         // Exit loop if input is valid
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.print("Please enter a numeric value: ");
+                }
+            }
+        }
