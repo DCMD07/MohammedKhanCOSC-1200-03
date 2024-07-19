@@ -6,7 +6,7 @@
 
 import java.util.Scanner;
 
-public class AverageCalculator {
+public class Averagecalculate {
 
     public static void main(String[] args) {
         // Create a Scanner object to read input
@@ -15,7 +15,7 @@ public class AverageCalculator {
         int numOfValues = 0;  // Number of values to be entered
         double sum = 0;       // Sum of the entered values
         int count = 0;        // Count of valid entered values
-     // Prompt user to enter the number of values
+        // Prompt user to enter the number of values
         System.out.print("How many values do you want to enter: ");
         while (true) {
             try {
@@ -50,3 +50,7 @@ public class AverageCalculator {
         // Calculate and display the average
         double average = sum / count;
         System.out.println("The average is: " + average);
+        // Close the scanner
+        scanner.close();
+    }
+}
