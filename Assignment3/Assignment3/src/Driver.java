@@ -15,3 +15,11 @@ public class Driver {
         vaccines[0] = new Vaccine();
         System.out.println("Displaying default vaccine details in a non-linear format:");
         vaccines[0].display(false);
+        // Setting values to the default vaccine
+        vaccines[0].setVaccineId(101);
+        vaccines[0].setVaccineName("Pfizer");
+        vaccines[0].setUnitCost(19.99);
+        vaccines[0].setQuantity(500);
+        vaccines[0].setExpiryDate(LocalDate.of(2025, 12, 31));
+        System.out.println("\nUpdated Vaccine Details:");
+        vaccines[0].display(false);
