@@ -23,3 +23,17 @@ public class Driver {
         vaccines[0].setExpiryDate(LocalDate.of(2025, 12, 31));
         System.out.println("\nUpdated Vaccine Details:");
         vaccines[0].display(false);
+
+        // Creating more vaccines with the parameterized constructor
+        vaccines[1] = new Vaccine(102, "Moderna", 20.99, 400, LocalDate.of(2026, 1, 31));
+        vaccines[2] = new Vaccine(103, "AstraZeneca", 15.50, 450, LocalDate.of(2025, 11, 30));
+
+        // Display all vaccines in table format
+        System.out.println("\nVaccine Records in Table Format:");
+        System.out.println(" SKU | Vaccine Name          |  Unit Cost  |  QTY  | Expiry Date");
+        System.out.println("-----|-----------------------|-------------|-------|------------");
+        for (Vaccine vaccine : vaccines) {
+            vaccine.display(true);
+        }
+    }
+}
