@@ -66,4 +66,9 @@ public class UserInformationForm extends Application {
             colorComboBox.getSelectionModel().clearSelection();
             outputLabel.setText("");
         });
+        VBox vbox = new VBox(10, firstNameField, lastNameField, ageField, colorComboBox, submitButton, clearButton, outputLabel);
+
+        // Create a scene with the layout and set it on the stage
+        Scene scene = new Scene(vbox, 300, 250);
+        primaryStage.setScene(scene);
 
