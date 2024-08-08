@@ -72,3 +72,15 @@ public class UserInformationForm extends Application {
         Scene scene = new Scene(vbox, 300, 250);
         primaryStage.setScene(scene);
 
+        // Show the window
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        // Launch the JavaFX application
+        launch(args);
+    }
+}
+
+
+
