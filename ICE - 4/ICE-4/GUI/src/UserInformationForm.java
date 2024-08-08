@@ -59,3 +59,11 @@ public class UserInformationForm extends Application {
                 colorComboBox.getSelectionModel().clearSelection();
             }
         });
+        clearButton.setOnAction(e -> {
+            firstNameField.clear();
+            lastNameField.clear();
+            ageField.clear();
+            colorComboBox.getSelectionModel().clearSelection();
+            outputLabel.setText("");
+        });
+
