@@ -19,7 +19,7 @@ public class UserInformationForm extends Application {
         primaryStage.setTitle("User Information Form");
 
         // Create text fields for first name, last name, and age
-        TextField firstNameField = new TextField();  
+        TextField firstNameField = new TextField();
         firstNameField.setPromptText("Enter your first name");
 
         TextField lastNameField = new TextField();
@@ -39,3 +39,23 @@ public class UserInformationForm extends Application {
 
         // Create a label to display the result
         Label outputLabel = new Label();
+
+        // When the submit button is clicked, display the entered information
+        submitButton.setOnAction(e -> {
+            String firstName = firstNameField.getText();
+            String lastName = lastNameField.getText();
+            String age = ageField.getText();
+            String color = colorComboBox.getValue();
+            if (firstName.isEmpty() || lastName.isEmpty() || age.isEmpty() || color == null) {
+                outputLabel.setText("Please fill out all fields.");
+            } else {
+                // Display the formatted message
+                outputLabel.setText(firstName + " " + lastName + ", age " + age + ", loves the color " + color + ".");
+
+                // Clear the fields after submission
+                firstNameField.clear();
+                lastNameField.clear();
+                ageField.clear();
+                colorComboBox.getSelectionModel().clearSelection();
+            }
+        });
