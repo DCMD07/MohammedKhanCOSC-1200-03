@@ -19,7 +19,7 @@ public class UserInformationForm extends Application {
         primaryStage.setTitle("User Information Form");
 
         // Create text fields for first name, last name, and age
-        TextField firstNameField = new TextField();  // Commit 1: Initial setup and text fields
+        TextField firstNameField = new TextField();  
         firstNameField.setPromptText("Enter your first name");
 
         TextField lastNameField = new TextField();
