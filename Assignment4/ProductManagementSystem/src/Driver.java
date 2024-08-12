@@ -19,3 +19,11 @@ public class Driver {
         products.add(p3);
         products.add(pp1);
         products.add(pp2);
+
+        // Display the details of all products in the list
+        for (Product product : products) {
+            product.display();
+            System.out.println();  
+        }
+    }
+}
