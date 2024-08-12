@@ -11,3 +11,11 @@ public class Driver {
         // Create instances of PerishableProduct with sample data
         PerishableProduct pp1 = new PerishableProduct(201, "Milk", 2.99, 100, 50, "Keep refrigerated", new Date(2024, 8, 15));
         PerishableProduct pp2 = new PerishableProduct(202, "Cheese", 5.99, 50, 20, "Store in a cool place", new Date(2024, 9, 10));
+
+        // Add all products to a list
+        ArrayList<Product> products = new ArrayList<>();
+        products.add(p1);
+        products.add(p2);
+        products.add(p3);
+        products.add(pp1);
+        products.add(pp2);
