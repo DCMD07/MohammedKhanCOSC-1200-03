@@ -33,4 +33,62 @@ public class Product {
         this.quantityNeeded = quantityNeeded;
         this.specialInstructions = specialInstructions;
     }
+// Accessors and mutators for each attribute
+    public final int getSku() {
+        return sku;
+    }
 
+    public final void setSku(int sku) {
+        this.sku = sku;
+    }
+
+    public final String getName() {
+        return name;
+    }
+
+    public final void setName(String name) {
+        this.name = name;
+    }
+
+    public final double getUnitCost() {
+        return unitCost;
+    }
+
+    public final void setUnitCost(double unitCost) {
+        this.unitCost = unitCost;
+    }
+
+    public final int getQuantityOnHand() {
+        return quantityOnHand;
+    }
+
+    public final void setQuantityOnHand(int quantityOnHand) {
+        this.quantityOnHand = quantityOnHand;
+    }
+
+    public final int getQuantityNeeded() {
+        return quantityNeeded;
+    }
+
+    public final void setQuantityNeeded(int quantityNeeded) {
+        this.quantityNeeded = quantityNeeded;
+    }
+
+    public final String getSpecialInstructions() {
+        return specialInstructions;
+    }
+
+    public final void setSpecialInstructions(String specialInstructions) {
+        this.specialInstructions = specialInstructions;
+    }
+
+    // Method to display the product details
+    public void display() {
+        System.out.println("SKU: " + sku);
+        System.out.println("Product Name: " + name);
+        System.out.println("Unit Cost: $" + unitCost);
+        System.out.println("Quantity on Hand: " + quantityOnHand);
+        System.out.println("Quantity Needed: " + quantityNeeded);
+        System.out.println("Special Instructions: " + specialInstructions);
+    }
+}
